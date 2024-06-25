@@ -1,6 +1,15 @@
 .App {
   text-align: center;
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
+  background-color: #000435; /* Dark navy blue background */
+  color: #ffffff; /* White font color */
+  padding: 20px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
 }
 
 .grid {
@@ -16,19 +25,24 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #8bc34a;
-  border: 2px solid #388e3c;
+  background-color: #0288d1; /* Light bluish/teal tile background */
+  border: 2px solid #01579b; /* Darker border */
   font-size: 2em;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .tile.empty {
-  background-color: #c8e6c9;
+  background-color: #64b5f6; /* Lighter shade for empty tile */
   cursor: default;
+}
+
+.tile:hover {
+  background-color: #01579b; /* Darker teal on hover */
 }
 
 .message {
   margin-top: 20px;
   font-size: 1.5em;
-  color: #4caf50;
+  color: #4caf50; /* Green for success message */
 }
